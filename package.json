@@ -1,0 +1,20 @@
+{
+  "name": "spellcarts",
+  "version": "1.0.0",
+  "description": "SpellCart is a revolutionary e-commerce app designed exclusively for the wizarding community. Say goodbye to long lines and crowded shops in Diagon Alley – now you can shop for all your magical supplies from the comfort of your own wand-waving space.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "Dhruv Kumar Tiwari",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "nodemon": "^3.1.0"
+  }
+}
