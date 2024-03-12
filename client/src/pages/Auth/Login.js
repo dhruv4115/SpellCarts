@@ -23,7 +23,8 @@ const handleSubmit=async (e) =>{
         ...auth,
         user:res.data.user,
         token:res.data.token,
-    })
+    });
+    localStorage.setItem('auth,JSON.stringify(res.data)'); 
     navigate("/login");
 
    }else{

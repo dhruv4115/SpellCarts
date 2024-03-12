@@ -12,6 +12,5 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default HomePage;
 
-//C:\Users\ditig\Desktop\INNODEV1\SpellCarts\SpellCarts\client\src\components\Layout\Layout.js
