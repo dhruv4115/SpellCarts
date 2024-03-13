@@ -18,7 +18,7 @@ const handleSubmit=async (e) =>{
    try{
     const res = await axios.post('/api/v1/auth/login',{email,password});
    if(res && res.data.success){
-    toast.success(res.data.message);
+    toast.success(res.data.message, "Login successful");
     setAuth({
         ...auth,
         user:res.data.user,

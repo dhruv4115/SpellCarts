@@ -2,7 +2,7 @@ import React from 'react';
 import {NavLink,Link} from 'react-router-dom';
 import { FaShopify } from "react-icons/fa6";
 import {useAuth} from '../../context/auth';
-import {toast} from 'react-toastify';
+import {toast} from 'react-hot-toast';
 const Header = () => {
   const[auth,setAuth] = useAuth();
 const handleLogout = () => {
@@ -10,6 +10,7 @@ const handleLogout = () => {
     ...auth,user:null,token:''
   })
   localStorage.removeItem("auth");
+  toast.success("Logout Successfully");
 };
   return (
     <>
@@ -40,7 +41,7 @@ const handleLogout = () => {
 ):(
   <>
    <li className="nav-item">
-          <NavLink onClick={handleLogout}to="/register" className="nav-link">Logout</NavLink>
+          <NavLink onClick={handleLogout}to="/login" className="nav-link">Logout</NavLink>
         </li>
        
   </>
