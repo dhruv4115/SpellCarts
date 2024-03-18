@@ -3,6 +3,7 @@ import {NavLink,Link} from 'react-router-dom';
 import { FaShopify } from "react-icons/fa6";
 import {useAuth} from '../../context/auth';
 import {toast} from 'react-hot-toast';
+import SearchInput from '../Forms/SearchInput';
 const Header = () => {
   const[auth,setAuth] = useAuth();
 const handleLogout = () => {
@@ -22,6 +23,7 @@ const handleLogout = () => {
     </button>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
+        <SearchInput/>
         <li className="nav-item">
           <NavLink to="/" className="nav-link " >Home</NavLink>
         </li>
@@ -57,17 +59,7 @@ const handleLogout = () => {
         <li className="nav-item">
           <NavLink to="/cart" className="nav-link">Cart(0)</NavLink>
         </li>
-        {/* <li className="nav-item dropdown"> 
-          <NavLink to="/" className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </NavLink>
-          <ul className="dropdown-menu">
-            <li><NavLink to="/" className="dropdown-item" href="#">Action</NavLink></li>
-            <li><NavLink to="/" className="dropdown-item" href="#">Another action</NavLink></li>
-            <li><hr className="dropdown-divider" /></li>
-            <li><NavLink to="/" className="dropdown-item" href="#">Something else here</NavLink></li>
-          </ul>
-  </li>*/}
+       
         
       </ul>
     </div>
