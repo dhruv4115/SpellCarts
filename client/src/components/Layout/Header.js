@@ -3,7 +3,7 @@ import {NavLink,Link} from 'react-router-dom';
 import { FaShopify } from "react-icons/fa6";
 import {useAuth} from '../../context/auth';
 import {toast} from 'react-hot-toast';
-import SearchInput from '../Forms/SearchInput';
+import SearchInput from '../Form/SearchInput';
 const Header = () => {
   const[auth,setAuth] = useAuth();
 const handleLogout = () => {
