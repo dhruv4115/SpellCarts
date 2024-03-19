@@ -38,7 +38,7 @@ function App() {
     <Route path="/cart" element ={<CartPage />} />
     <Route path="/category/:slug" element ={<CategoryProduct />} />
     <Route path="/dashboard" element={<PrivateRoute />}>
-          <Route path="" element={<Dashboard />} />
+          <Route path="user" element={<Dashboard />} />
           <Route path="user/orders" element={<Orders />} />
           <Route path="user/profile" element={<Profile />} />
     </Route>
