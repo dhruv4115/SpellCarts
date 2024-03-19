@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom';
 import { AuthProvider} from './context/auth';
 import { SearchProvider } from './context/search';
+import { CartProvider } from './context/cart';
 import 'antd/dist/reset.css';
 
 
@@ -14,11 +15,13 @@ root.render(
   
   <AuthProvider>
     <SearchProvider>
+      <CartProvider>
 <BrowserRouter>
  
     <App />
 
   </BrowserRouter>
+  </CartProvider>
   </SearchProvider>
   </AuthProvider>
 );
