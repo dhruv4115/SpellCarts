@@ -6,8 +6,10 @@
  .pnp.js
  # testing
  /coverage/
-  #/public
-  #/src
+  /public
+  /src
+  /package.json
+  /package-lock.json
 
 
  # misc
